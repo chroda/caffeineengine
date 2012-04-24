@@ -1,6 +1,6 @@
 <?php
 print'<div id="core_defines" style="text-align:center;background:#777;padding:5px;border:2px solid #333;z-index:100;">
-      <span style="font-family:monospace;color:#eee;padding:5px;">Welcome to the core of CHROSH Engine, bellow you can see all definitions of core.</span>
+      <span style="font-family:monospace;color:#eee;padding:5px;">Welcome to the core of CaffeineEngine, bellow you can see all definitions of core.</span>
       <button type="button" id="debug_core_hide" href="javascript:;" style="margin-left:46%;display:block" onClick="
         document.getElementById(\'debug_core_code\').style.display=\'none\';
         document.getElementById(\'debug_core_hide\').style.display=\'none\';
