@@ -33,6 +33,11 @@ define( '__CONTROLLERS_DIR__', __CORE_DIR__ . 'core_controllers/' );
 define( '__DNS__', $_SERVER['SERVER_NAME'] );
 
 /**
+ * Alias for IP number.
+ */
+define( '__HERE__', $_SERVER['SERVER_ADDR'] );
+
+/**
  * Alias for self page, usefull for forms and get anchors.
  */
 define( '__HERE__', $_SERVER['REQUEST_URI'] );
