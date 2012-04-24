@@ -35,7 +35,7 @@ define( '__DNS__', $_SERVER['SERVER_NAME'] );
 /**
  * Alias for IP number.
  */
-define( '__HERE__', $_SERVER['SERVER_ADDR'] );
+define( '__IP__', $_SERVER['SERVER_ADDR'] );
 
 /**
  * Alias for self page, usefull for forms and get anchors.
