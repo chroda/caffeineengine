@@ -1,6 +1,6 @@
 <?php
 /**
- * @AUTHOR Christian Marcell (chroda) <christianmarcell@gmail.com>
+ * @AUTHOR Christian Marcell (chroda) <chroda@chroda.com.br>
  * @VERSION 1.0
  * @SINCE 2011-12-21
  * Configurations of Core, to work independently of project,
