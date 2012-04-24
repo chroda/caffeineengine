@@ -18,7 +18,6 @@ pr('<b> __CONTROLLERS_DIR__: </b> ' . __CONTROLLERS_DIR__ );
 pr('<b> __DNS__: </b> '             . __DNS__ );
 pr('<b> __IP__: </b> '           	  . __IP__ );
 pr('<b> __HERE__: </b> '            . __HERE__ );
-pr('<b> __PATH__: </b> '            . __PATH__ );
 pr('<b> __VIEW_EXT__: </b> '        . __VIEW_EXT__ );
 pr('<b> __REWRITE_EXT__: </b> '     . __REWRITE_EXT__ );
 pr('<b> __TPL_EXT__: </b> '         . __TPL_EXT__ );
