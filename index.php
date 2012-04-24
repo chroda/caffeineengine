@@ -16,6 +16,7 @@ pr('<b> __CORE_DIR__: </b> '        . __CORE_DIR__ );
 pr('<b> __LIB_DIR__: </b> '         . __LIB_DIR__ );
 pr('<b> __CONTROLLERS_DIR__: </b> ' . __CONTROLLERS_DIR__ );
 pr('<b> __DNS__: </b> '             . __DNS__ );
+pr('<b> __IP__: </b> '           	  . __IP__ );
 pr('<b> __HERE__: </b> '            . __HERE__ );
 pr('<b> __PATH__: </b> '            . __PATH__ );
 pr('<b> __VIEW_EXT__: </b> '        . __VIEW_EXT__ );
