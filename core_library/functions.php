@@ -25,7 +25,7 @@ ob_start();
  * @author Michel Wilhelm <michelwilhelm@gmail.com>
  * @author Christian Marcell (chroda) <christianmarcell@gmail.com>
  * @return mixed
- * @package Chrosh
+ * @package CaffeineEngine
  * @link http://pastebin.com/SSZe16qx
  */
 function pr( $_target, $_debug=false, $_jsPlus=false)
