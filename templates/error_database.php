@@ -19,7 +19,7 @@
     <div id="content">
       
       <h2>What a shame! We cannot do that!</h2>
-      <img id="logo" src="http://chrosh.chroda.com.br/templates/error_db.png" alt="error_db"/>
+      <img id="logo" src="http://caffeineengine.chroda.com.br/templates/error_db.png" alt="error_db"/>
       <p>The database has failed in the connection process, please contact the <a href="mailto:chroda@chroda.com.br?subject=error_db">webmaster</a></p>
     </div>
   </body>
