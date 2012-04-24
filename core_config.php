@@ -71,7 +71,7 @@ define( '__DEBUG__',true );
 /**
  * Rename session with engine prefix.
  */
-define( '__SESSION_NAME__', 'CHROSH' );
+define( '__SESSION_NAME__', 'CaffeineEngine' );
 
 /**
  * Duration of a session.
@@ -102,9 +102,9 @@ if( __DEBUG__ === true ) { StartTimer(); }
 header( 'Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7"', true );
 header( 'Content-Type: text/html; charset=UTF-8' );
 header( 'Expires: ' . date( 'D, d m Y H:i:s' ) . ' GMT' );
-header( 'X-Powered-By: ChroshEngine/0.1' );
+header( 'X-Powered-By: CaffeineEngine/0.1' );
 header( 'X-Server-Name: ' . __DNS__ );
-header( 'X-Developer: Christian Marcell (chroda) <christianmarcell@gmail.com>' );
+header( 'X-Developer: Christian Marcell (chroda) <chroda@chroda.com.br>' );
 
 /**
  * Timezone.
