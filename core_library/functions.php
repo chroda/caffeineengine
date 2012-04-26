@@ -199,7 +199,7 @@ function urlRedirect( $_HTTP_HOST, $_REQUEST_URI ){
  * @return Full img tag with alt and id parameters
  * @link http://pastebin.com/JBL8LDUZ
  */
-function getGravar($_email, $_s = 80, $_checkAcc = false, $_d = 'mm', $_r = 'r' ) {
+function getGravatar($_email, $_s = 80, $_checkAcc = false, $_d = 'mm', $_r = 'r' ) {
   $_url = 'http://www.gravatar.com/';
   $_hash = md5( strtolower( trim( $_email ) ) );
   $_parameters ='?s='.$_s.'&d='.$_d.'&r='.$_r;
