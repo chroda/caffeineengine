@@ -155,7 +155,7 @@ class View {
   /**
    * tarefa - phpDoc
    */
-  public static function loadJs($_cache=false,$_rel=true) {
+  public static function loadJs($_cache=false,$_no_rel=false) {
 
     # Ordenando por índice
     ksort(self::$__js_array);
