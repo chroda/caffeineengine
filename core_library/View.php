@@ -186,7 +186,7 @@ class View {
         fclose($_handle);
       }
       # Carrega somente se o arquivo existir
-      printf('<script type="text/javascript" rel="javascript" src="%s"></script>' . "\n", location(URL_CACHE_PATH . "cache.{$_bytes}.js", true ));
+      printf('<script type="text/javascript" '.$_rel.' src="%s"></script>' . "\n", location(URL_CACHE_PATH . "cache.{$_bytes}.js", true ));
     } else {
       # Carregando...
   	  foreach(self::$__js_array as $_key=>$_url)
@@ -197,7 +197,7 @@ class View {
         }
         
         # Carrega somente se o arquivo existir
-        printf('<script rel="javascript" type="text/javascript" src="%s"></script>' . "\n", $_url);
+        printf('<script '.$_rel.' type="text/javascript" src="%s"></script>' . "\n", $_url);
       }
 
     }
