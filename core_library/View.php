@@ -159,7 +159,7 @@ class View {
 
     # Ordenando por índice
     ksort(self::$__js_array);
-	if($_no_rel==false){$_rel='rel="javascript"'}else{$_rel='';}
+	if($_no_rel==false){$_rel='rel="javascript"';}else{$_rel='';}
     if($_cache==true) {
       # Carregando...
   	  foreach(self::$__js_array as $_key=>$_url)
