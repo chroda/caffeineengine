@@ -202,7 +202,7 @@ function urlRedirect( $_HTTP_HOST, $_REQUEST_URI ){
 function getGravatar($_email, $_s = 80, $_checkAcc = false, $_d = 'mm', $_r = 'r' ) {
   $_url = 'http://www.gravatar.com/';
   $_hash = md5( strtolower( trim( $_email ) ) );
-  $_parameters ='?s='.$_s.'&d='.$_d.'&r='.$_r;
+  $_parameters ='?s='.$_s.'&amp;d='.$_d.'&amp;r='.$_r;
   $_imgsource = 'class="avatar" src="'.$_url.'avatar/'.$_hash.$_parameters.'"';
   if ($_checkAcc === true) {$_getContents = @file_get_contents($_url.$_hash.'.php'); 
     if ($_getContents) {
