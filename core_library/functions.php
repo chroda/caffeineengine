@@ -215,7 +215,7 @@ function getGravatar($_email, $_s = 80, $_checkAcc = false, $_d = 'mm', $_r = 'r
       $_gravatar_name = 'no_img';    
       echo '<img alt="'.$_gravatar_name.'_gravatar" id="'.$_gravatar_id.'" '.$_imgsource.'/>';
     }
-  }else{echo '<img '.$_imgsource.' />';}
+  }else{echo '<img alt="gravatar_of_'.$_email.'" '.$_imgsource.' />';}
 }
 
 /**
