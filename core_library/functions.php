@@ -1502,44 +1502,45 @@ function get_flash(){
   }
 }
 
-
-/**
- * tarefa - phpDOC
- * how work ????
- * @author Michel Wilhelm <michelwilhelm@gmail.com>
- * @param 
- * This function translate all the environment according with the
- * i18n on database and the user's preference or the default system preference located on config.php
- * defined with __LOCALE__ constant
- *
- * The __t is Translate :)
- * @version 0.1
- * @name __t
- */
-function __t( $_query = false, $_return = false ) {
-  // Database connection
-  $__db = $_SESSION['__db'];
-
-  // Getting arguments
-  $_args = explode('.', $_query);
-  if( count($_args) == 1 ){ $_args['0'] = 'default'; $_args['1'] = $_query; }
+if (DATABASE === 'mongo') {
+  /**
+   * tarefa - phpDOC
+   * how work ????
+   * @author Michel Wilhelm <michelwilhelm@gmail.com>
+   * @param 
+   * This function translate all the environment according with the
+   * i18n on database and the user's preference or the default system preference located on config.php
+   * defined with __LOCALE__ constant
+   *
+   * The __t is Translate :)
+   * @version 0.1
+   * @name __t
+   */
+  function __t( $_query = false, $_return = false ) {
+    // Database connection
+    $__db = $_SESSION['__db'];
   
-  // Verifying the translate
-  if( isset( $_SESSION['user']['locale'] ) ) {
-    $_locale = $_SESSION['user']['locale'];
-  } else {
-    $_locale = __LOCALE__;
-  }
-
-  // Getting translate
-	  $_i18n = $__db->i18n->findOne(Array('locale'=>$_locale, 'group' => $_args['0'], 'key' => $_args['1']));
-
-  if($_return==true) {
-    return $_i18n['value'];
-  } elseif($_return=='array') {
-    return $_i18n;
-  } else {
-    echo $_i18n['value'];
+    // Getting arguments
+    $_args = explode('.', $_query);
+    if( count($_args) == 1 ){ $_args['0'] = 'default'; $_args['1'] = $_query; }
+    
+    // Verifying the translate
+    if( isset( $_SESSION['user']['locale'] ) ) {
+      $_locale = $_SESSION['user']['locale'];
+    } else {
+      $_locale = __LOCALE__;
+    }
+  
+    // Getting translate
+  	  $_i18n = $__db->i18n->findOne(Array('locale'=>$_locale, 'group' => $_args['0'], 'key' => $_args['1']));
+  
+    if($_return==true) {
+      return $_i18n['value'];
+    } elseif($_return=='array') {
+      return $_i18n;
+    } else {
+      echo $_i18n['value'];
+    }
   }
 }
 

@@ -58,9 +58,15 @@ define( '__TPL_EXT__', __VIEW_EXT__ );
 define( '__REWRITE_EXT__', '.html' );
 
 /**
- * Primary Database.
+ * Primary MongoDB Database.
  */
 define( '__MONGO_SERVER__','master' );
+
+/**
+ * Primary MySQL Database.
+ */
+define( '__MYSQL_SERVER__','mysql' );
+
 
 /**
  * Logs Storage or not.
