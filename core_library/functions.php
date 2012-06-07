@@ -736,6 +736,28 @@ function cdn_location($_link=false, $_return = false, $_ext='none') {
 
 /**
  * tarefa - phpDOC
+ * @param Boolean $_link    - ???
+ * @param Boolean $_return  - ???
+ * @param String  $_ext     - ???
+ */ 
+function data_location($_link=false, $_return = false, $_ext='none') {
+
+  if($_link['0']=='/'){
+    for($i=1;$i<=strlen($_link);$i++) $_tmp .= $_link[$i];
+    $_link = $_tmp;
+  }
+
+  $_url  = DATA_DIR . str_replace( '//', '/', $_link);
+
+  if($_return==false) {
+    echo $_url;
+  } else {
+    return $_url;
+  }
+}
+
+/**
+ * tarefa - phpDOC
  * how work ????
  * @author Michel Wilhelm <michelwilhelm@gmail.com>
  * @param Boolean $_link    - ??? 
