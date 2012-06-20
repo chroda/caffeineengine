@@ -10,6 +10,9 @@
  * @TODO Organizar os tipos, dependentes e etc.
  * Padronizar e organizar todos os phpDocs do script.. ELAIA!
  * ......(abrindo o arquivo..7 de abril de 2012..quando será que vou organizar?)
+ * 
+ * ...20 de junho e ainda nada.. =/
+ * 
  */
 
 ob_start();
@@ -1005,16 +1008,10 @@ function string_safe($str) {
  * @return string Retorna 01,02,03,04,05,06,07,08,09 caso seja somente 1,2,3,4,5,6,7,8,9
  * @name string_menor10
  */
-function menor10($s) {
-  if (strlen($s)==1) {
-    $str[0] = "0";
-    $str[1] = $s;
-  } else {
-    $str[0] = $s;
-  }
-  $t .= $str[0];
-  $t .= $str[1];
-  return $t;
+function lessTen($number) {
+  if (strlen($number)==1) {
+    return '0'.$number;
+  } return $number;
 }
 
 /**
