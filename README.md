@@ -3,6 +3,6 @@ CaffeineEngine
 
 An engine built in PHP, designed to be embedded in systems that are created.
 
-So soon I expect add the project files
+This is a old project and its freezed.
 
-Actually, works with MongoDB and MySQL, but its very poor the MySQL support.
+Only exists today to me improve my personal technics with PHP.
